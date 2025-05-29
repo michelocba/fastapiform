@@ -8,14 +8,14 @@ app = FastAPI()
 
 template = Jinja2Templates(directory="./view")
 
-@app.get("/", response_class=HTMLResponse)
-def root(req: Request):
-  return template.TemplateResponse("index.html", {"request": req})
+# @app.get("/", response_class=HTMLResponse)
+# def root(req: Request):
+#   return template.TemplateResponse("index.html", {"request": req})
   
 
-@app.post("/", response_class=HTMLResponse)
-def root(req: Request):
-  return template.TemplateResponse("index.html", {"request": req})
+# @app.post("/", response_class=HTMLResponse)
+# def root(req: Request):
+#   return template.TemplateResponse("index.html", {"request": req})
 
 
 @app.get("/signup", response_class=HTMLResponse)
